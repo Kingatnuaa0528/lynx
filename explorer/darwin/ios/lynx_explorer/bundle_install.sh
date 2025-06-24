@@ -15,7 +15,7 @@ usage() {
     echo "Options:"
     echo " -h, --help         Show this help message"
     echo " --skip-card-build  Skip card build task"
-    echo " --integration-test  Build integration test demo pages"
+    echo " --e2e-test  Build end-to-end test demo pages"
     echo " --disable-trace    Disable trace"
 }
 
@@ -33,9 +33,9 @@ build_card_resources() {
         python3 $root_dir/explorer/showcase/build_and_copy.py
     fi
 
-    if [[ "$INTEGRATION_TEST" == "true" ]]; then
-        # build integration test demo pages
-        python3 $root_dir/testing/integration_test/demo_pages/build_and_copy.py
+    if [[ "$E2E_TEST" == "true" ]]; then
+        # build e2e test demo pages
+        python3 $root_dir/testing/e2e_test/demo_pages/build_and_copy.py
     fi
 }
 
@@ -49,8 +49,8 @@ handle_options() {
             --skip-card-build)
                 SKIP_CARD_BUILD=true
                 ;;
-            --integration-test)
-                INTEGRATION_TEST=true
+            --e2e-test)
+                E2E_TEST=true
                 ;;
             --disable-trace)
                 enable_trace=false
@@ -64,7 +64,7 @@ handle_options() {
 }
 
 SKIP_CARD_BUILD=false
-INTEGRATION_TEST=false
+E2E_TEST=false
 
 enable_trace_param=$([ $enable_trace == true ] && echo "--enable-trace" || echo "")
 

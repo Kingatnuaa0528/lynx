@@ -1,4 +1,4 @@
-# Integration test
+# End-to-End test
 
 This package contains self-driving testing for Lynx on devices and emulators. It is driven by the [Lynx-E2E](https://pypi.org/project/lynx-e2e-appium/) framework which is a self-developed UI automation framework of Lynx.
 
@@ -8,7 +8,7 @@ Please refer to [ENV_SETUP.md](ENV_SETUP.md) for environment setup.
 
 ## Run Test
 
-The integration tests are run based on the Explorer. You can use a real device or an emulator to run them.
+The e2e tests are run based on the Explorer. You can use a real device or an emulator to run them.
 
 ### Build Explorer with demo pages
 
@@ -16,21 +16,21 @@ The integration tests are run based on the Explorer. You can use a real device o
 Enter the `explorer/android` directory from the project root directory and execute the following command
 
 ```
-./gradlew :LynxExplorer:assembleNoAsanDebug -PIntegrationTest
+./gradlew :LynxExplorer:assembleNoAsanDebug -PE2ETest
 ```
 
 #### For iOS
 1. Install iOS project dependencies
 ```
 cd explorer/darwin/ios/lynx_explorer
-./bundle_install.sh --integration-test
+./bundle_install.sh --e2e-test
 ```
 2. Open `LynxExplorer.xcworkspace` by Xcode.
 3. Select `LynxExplorer` to execute the build in Xcode.
 
 ### Run the specified test suite
 
-All casesets are stored in `testing/integration_test/test_script/case_sets`. You can enter the `testing/integration_test/test_script` directory from the project root directory and execute the following command to run the `core` test suite.
+All casesets are stored in `testing/e2e_test/test_script/case_sets`. You can enter the `testing/e2e_test/test_script` directory from the project root directory and execute the following command to run the `core` test suite.
 
 ```bash
 # run on android
@@ -47,15 +47,15 @@ If you want to contribute a new test case or test suite to the Lynx repository, 
 
 ### Add a new test suite
 
-First, create a new directory in the `testing/integration_test/test_script/case_sets` directory. The directory name should be the same as the test suite name.
+First, create a new directory in the `testing/e2e_test/test_script/case_sets` directory. The directory name should be the same as the test suite name.
 
-Then, copy the `runner.py` file in the `testing/integration_test/test_script/case_sets/core` folder to the current folder. This file is used to run the test suite.
+Then, copy the `runner.py` file in the `testing/e2e_test/test_script/case_sets/core` folder to the current folder. This file is used to run the test suite.
 
 After that, write the test script file in the current test suite folder. You can refer to the next subsection `Add a new case` to add a test script.
 
 ### Add a new case
 
-First, create a new file in the `testing/integration_test/test_script/case_sets/<test_suite>` directory. The file name should be the same as the case name.
+First, create a new file in the `testing/e2e_test/test_script/case_sets/<test_suite>` directory. The file name should be the same as the case name.
 
 Then, write the test script running based on the Lynx-E2E framework. 
 

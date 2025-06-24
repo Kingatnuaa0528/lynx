@@ -18,7 +18,7 @@ checker-config:
       - 'explorer/android/gradle/*'
       - 'explorer/android/lynx_explorer/*'
       - 'explorer/android/lynx_explorer/src/main/res'
-      - 'testing/integration_test/test_script/resources/*'
+      - 'testing/e2e_test/test_script/resources/*'
       - 'explorer/android/lynx_test_bench/scr/main/res'
 
   coding-style-checker:

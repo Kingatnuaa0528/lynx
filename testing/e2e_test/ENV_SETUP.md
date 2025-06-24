@@ -1,6 +1,6 @@
 # Setup Execution Environment
 
-Integration test uses [Lynx-E2E](https://pypi.org/project/lynx-e2e-appium) as the execution framework and [Appium](http://appium.io/docs/en/latest/) as the underlying execution engine. Therefore, before execution, it is necessary to first set up the local Appium environment.
+End-to-End test uses [Lynx-E2E](https://pypi.org/project/lynx-e2e-appium) as the execution framework and [Appium](http://appium.io/docs/en/latest/) as the underlying execution engine. Therefore, before execution, it is necessary to first set up the local Appium environment.
 
 ## Install Appium
 

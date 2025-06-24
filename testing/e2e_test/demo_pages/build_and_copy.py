@@ -42,12 +42,12 @@ if os.path.exists(automation_ios):
     shutil.rmtree(automation_ios)
 os.makedirs(automation_ios)
 
-print("========== build integration test demo pages ==========")
+print("========== build e2e test demo pages ==========")
 # Install dependencies and build
 run_pnpm_command(["pnpm", "install", "--frozen-lockfile"], os.getcwd())
 run_pnpm_command(["pnpm", "run", "build"], os.getcwd())
 
-print("========== copy integration test demo pages resource==========")
+print("========== copy e2e test demo pages resource==========")
 # Iterate through directories in the current script directory
 for item in os.listdir(script_dir):
     item_path = os.path.join(script_dir, item)

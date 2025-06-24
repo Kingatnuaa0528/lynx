@@ -22,10 +22,10 @@ buildscript {
 
         pythonExec = project.file(python_exec).absolutePath
 
-        if (project.hasProperty("IntegrationTest")) {
-            buildIntegrationDemo = true
+        if (project.hasProperty("E2ETest")) {
+            buildE2EDemo = true
         } else {
-            buildIntegrationDemo = false
+            buildE2EDemo = false
         }
     }
     repositories {
@@ -171,11 +171,11 @@ task buildShowcase {
 
 buildShowcase.onlyIf { build_showcase == 'true' }
 
-if (buildIntegrationDemo) {
-    task buildIntegrationDemo {
-        description "Build Integeration Test Demo Card."
+if (buildE2EDemo) {
+    task buildE2EDemo {
+        description "Build E2E Test Demo Card."
         exec {
-            workingDir "../../testing/integration_test/demo_pages"
+            workingDir "../../testing/e2e_test/demo_pages"
             commandLine pythonExec, "./build_and_copy.py"
             println commandLine
         }

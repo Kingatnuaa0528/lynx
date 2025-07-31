@@ -15,6 +15,7 @@ from patch_lynx_version import patch_lynx_version
 CUR_DIR = os.path.dirname(os.path.abspath(__file__))
 HARMONY_DIR = os.path.normpath(os.path.join(CUR_DIR, '..'))
 LYNX_DIR = os.path.normpath(os.path.join(HARMONY_DIR, '..', '..'))
+PLATFORM_HARMONY_DIR = os.path.normpath(os.path.join(LYNX_DIR, 'platform', 'harmony'))
 TEMPLATE_DEVTOOL_DIR = os.path.normpath(
     os.path.join(LYNX_DIR, 'devtool', 'lynx_devtool', 'resources', 'devtool-switch'))
 

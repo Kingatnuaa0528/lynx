@@ -1,0 +1,32 @@
+platform/android/build.gradle
+  h_7a1e47632c7d77 49-54
+.github/workflows/ci.yml
+  h_7a1e47632c7d77 678,685-686
+explorer/android/build.gradle
+  s_a0684c68784029::t_7380c2b63d2227 53-58
+platform/android/lynx_android/build.gradle
+  h_7a1e47632c7d77 335,337
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "4ece1187303840fd6ce3d8f1bbc7403903419eca",
+  "prompts": {},
+  "humans": {
+    "h_7a1e47632c7d77": {
+      "author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_a0684c68784029": {
+      "agent_id": {
+        "tool": "trae-cue",
+        "id": "ai_tab-icr-af13cf4b-4be1-47c1-9a1b-5cbf11ad069d",
+        "model": "default"
+      },
+      "human_author": null
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}

@@ -1,0 +1,25 @@
+explorer/darwin/ios/lynx_explorer/bundle_install.sh
+  s_3c0aa9419d0d0d::t_9b5a8096c389c4 84-108
+.github/actions/ios-explorer-build/action.yml
+  s_3c0aa9419d0d0d::t_0a454283117a65 19-28
+.github/workflows/ci.yml
+  s_3c0aa9419d0d0d::t_7f79b7f62a9d94 840-841
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "355ff2c00a7e125df50921baf1cea966bee415e9",
+  "prompts": {},
+  "sessions": {
+    "s_3c0aa9419d0d0d": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a4f397cc2d0de288444ce7f",
+        "model": "gpt-5.2__dev"
+      },
+      "human_author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}

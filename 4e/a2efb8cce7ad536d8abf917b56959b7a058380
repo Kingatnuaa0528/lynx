@@ -1,0 +1,139 @@
+testing/integration_test/test_script/requirements.in
+  h_7a1e47632c7d77 1
+testing/integration_test/test_script/lib/test_runner/test_runner.py
+  h_7a1e47632c7d77 161
+platform/darwin/ios/lynx_devtool/Helper/LynxUITreeHelper.mm
+  s_3c0aa9419d0d0d::t_716fb7b0d109bf 25,32-45 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a6209663439eec6d56e3658","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Single":25},{"Range":[32,45]}]}]}
+testing/integration_test/test_script/requirements.txt
+  h_7a1e47632c7d77 13
+platform/darwin/ios/lynx_devtool/Helper/LynxUITreeHelperUnitTest.m
+  s_3c0aa9419d0d0d::t_8b8b4164f0694c 6,21,30,37-51 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a6209c23439eec6d56e367f","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Single":6},{"Single":21},{"Single":30},{"Range":[37,51]}]}]}
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "4ea2efb8cce7ad536d8abf917b56959b7a058380",
+  "prompts": {},
+  "humans": {
+    "h_7a1e47632c7d77": {
+      "author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_3c0aa9419d0d0d": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a4f397cc2d0de288444ce7f",
+        "model": "gpt-5.5__dev"
+      },
+      "human_author": null
+    }
+  },
+  "attestation_metadata": {
+    "platform/darwin/ios/lynx_devtool/Helper/LynxUITreeHelper.mm": [
+      {
+        "hash": "s_3c0aa9419d0d0d::t_716fb7b0d109bf",
+        "line_ranges": [
+          {
+            "Single": 25
+          },
+          {
+            "Range": [
+              32,
+              45
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a6209663439eec6d56e3658",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Single": 25
+              },
+              {
+                "Range": [
+                  32,
+                  45
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "platform/darwin/ios/lynx_devtool/Helper/LynxUITreeHelperUnitTest.m": [
+      {
+        "hash": "s_3c0aa9419d0d0d::t_8b8b4164f0694c",
+        "line_ranges": [
+          {
+            "Single": 6
+          },
+          {
+            "Single": 21
+          },
+          {
+            "Single": 30
+          },
+          {
+            "Range": [
+              37,
+              51
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a6209c23439eec6d56e367f",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Single": 6
+              },
+              {
+                "Single": 21
+              },
+              {
+                "Single": 30
+              },
+              {
+                "Range": [
+                  37,
+                  51
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_3c0aa9419d0d0d": {
+      "tool": "trae",
+      "conversation_id": "6a4f397cc2d0de288444ce7f",
+      "session_id": "6a4f397cc2d0de288444ce7f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_3c0aa9419d0d0d::t_716fb7b0d109bf": {
+      "tool": "trae",
+      "conversation_id": "6a4f397cc2d0de288444ce7f",
+      "session_id": "6a4f397cc2d0de288444ce7f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_3c0aa9419d0d0d::t_8b8b4164f0694c": {
+      "tool": "trae",
+      "conversation_id": "6a4f397cc2d0de288444ce7f",
+      "session_id": "6a4f397cc2d0de288444ce7f",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}

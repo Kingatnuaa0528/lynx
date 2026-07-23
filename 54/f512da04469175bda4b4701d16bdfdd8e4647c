@@ -1,0 +1,18 @@
+testing/integration_test/test_script/requirements.in
+  h_7a1e47632c7d77 1
+testing/integration_test/test_script/requirements.txt
+  h_7a1e47632c7d77 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "54f512da04469175bda4b4701d16bdfdd8e4647c",
+  "prompts": {},
+  "humans": {
+    "h_7a1e47632c7d77": {
+      "author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}

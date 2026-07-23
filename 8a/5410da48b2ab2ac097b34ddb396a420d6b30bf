@@ -1,0 +1,28 @@
+testing/integration_test/test_script/requirements.in
+  h_7a1e47632c7d77 1
+testing/integration_test/test_script/requirements.txt
+  s_e0a5c3ea163a15::t_23e2347ca067b8 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "8a5410da48b2ab2ac097b34ddb396a420d6b30bf",
+  "prompts": {},
+  "humans": {
+    "h_7a1e47632c7d77": {
+      "author": "gaohanqing <gaohanqing@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_e0a5c3ea163a15": {
+      "agent_id": {
+        "tool": "trae-cue",
+        "id": "ai_tab-icr-f9f1f952-800c-4da5-8088-cf5fc5cdfb7e",
+        "model": "default"
+      },
+      "human_author": null
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}
